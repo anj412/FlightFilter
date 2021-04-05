@@ -28,10 +28,10 @@ public class Main {
         flightFilters(flights, predicates.get(1));
         flightFilters(flights, predicates.get(2));
 
-        //Или все фильтры сразу
+        //Применим все фильтры сразу (вдруг их очень много)
         flightFilters(flights, predicates.toArray(new Predicate[]{}));
 
-        //или только первые два фильтра
+        //или, например, применим только первые два фильтра
         flightFilters(flights, predicates.get(0), predicates.get(1));
     }
 
